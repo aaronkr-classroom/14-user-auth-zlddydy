@@ -1,0 +1,26 @@
+<!-- views/partials/header.ejs -->
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div
+      class="d-flex flex-wrap py-3 align-items-center justify-content-center justify-content-md-between"
+    >
+      <!-- 로고 -->
+      <%- include('_logo.ejs') %>
+
+      <!-- 메뉴 -->
+      <%- include('_navigation.ejs') %>
+
+      <!--
+        @TODO: 
+
+        Listing 24.6 (p. 357)
+        내비게이션 바에 로그인 상태 추가
+      -->
+      <div class="user-info col-md-3 text-end">
+        <!-- loggedIn 코드 -->
+      </div>
+    </div>
+  </div>
+</header>
