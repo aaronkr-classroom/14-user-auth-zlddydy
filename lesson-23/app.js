@@ -120,7 +120,11 @@ router.get("/transportation", pagesController.showTransportation); // 교통수�
  * Listing 23.2 (p. 335)
  * app.js로 로그인 라우트를 추가
  */
-
+router.get("/users/login", usersController.login);
+router.post("/users/login,",
+  usersController.authenticate,
+  usersController.redirectView
+);
 /**
  * Users
  */
